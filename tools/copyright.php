@@ -1,3 +1,4 @@
+<?php
 $spacer = " &mdash; ";
 $now = date("Y");
 $start = isset($start)? $start : $now;
