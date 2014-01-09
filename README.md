@@ -1,4 +1,0 @@
-modx-helpers
-============
-
-MODx Helpers
