@@ -36,8 +36,10 @@
 // Check Event
 if ($modx->event->name == OnDocFormRender && $mode == modSystemEvent::MODE_NEW) {
    
+  $id = empty($_REQUEST['id']) ? false : $_REQUEST['id'];
+  $id = empty($id) ? (empty($_REQUEST['parent']) ? false : $_REQUEST['parent']) : $_REQUEST['parent'];
   // Get current document ID
-  if ($id = $_REQUEST['id']) {
+  if ($id) {
  
     // Document Chain
     $resources = array($id);
