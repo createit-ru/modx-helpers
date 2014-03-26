@@ -1,0 +1,24 @@
+.wrapper {
+	padding: 25px;
+	overflow: hidden;
+	zoom: 1;
+	min-width: 165px;
+}
+.container {
+	margin-left: -50px;
+	margin-top: -50px;
+	zoom: 1;
+	word-spacing: -0.25em;
+}
+
+.container>li {
+	margin-top: 50px;
+	margin-left: 50px;
+	width: 100px;
+	border: 10px solid red;
+	padding: 10px;
+	display: -moz-inline-box;display: inline-block; *zoom: 1; *display: inline;
+	word-spacing: normal;
+	vertical-align: top;
+}
+
