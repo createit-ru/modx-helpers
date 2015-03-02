@@ -1,0 +1,45 @@
+a {
+  color: #000;
+  text-decoration: underline;
+	outline: none !important;
+}
+input, select, textarea {outline: none !important;}
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 15px 0;
+}
+
+strong, b {font-weight: bold;}
+em, i {font-style: italic;}
+
+ul {
+  list-style: disc;
+	list-style-position: inside;
+  margin: 5px 0 15px 25px;
+}
+ol {
+  list-style: decimal;
+	list-style-position: inside;
+  margin: 5px 0 15px 25px;
+}
+li {
+  margin: 0;
+}
+
+input {
+  vertical-align: middle;
+}
+
+.center {text-align:center;}
+.left {text-align:left;}
+.right {text-align:right;}
+
+.fright {float: right;}
+.fleft {float: left;}
+
+.imgleft {float: left;margin: 0 20px 0 10px;}
+.imgright {float: right;margin: 0 0 10px 20px;}
+.imgborder {border: solid 1px #C0C0C0;padding: 10px;}
