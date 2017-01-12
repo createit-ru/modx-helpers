@@ -1,24 +1,19 @@
 <?php
-$pagetitle = $modx->resource->get("pagetitle");
-$longtitle = $modx->resource->get("longtitle");
-$seotitle = $modx->resource->getTVValue("seoTitle");
 
-$sitename = $modx->config["site_name"];
+$result = '';
 
-$v = '';
-if($seotitle != ''){
-  $v = $seotitle;
+$result = $modx->resource->getTVValue("seoTitle");
+if(empty($result)){
+    $result = $modx->resource->get("longtitle");
 }
-else{
-  if($longtitle == ''){
-    $v = $pagetitle;
-  }
-  else{
-    $v = $longtitle;
-  }
+if(empty($result)){
+    $result = $modx->resource->get("pagetitle");
 }
 
-if($modx->config["site_start"] == $modx->resource->get("id")){
-  return $v;
+// для всех страниц, кроме главной, добавляем имя сайта к заголовку
+if($modx->config["site_start"] != $modx->resource->get("id")){
+  $sitename = $modx->config["site_name"];
+  $result = $result." - ".$sitename;
 }
-return $v." - ".$sitename;
+
+return $result;
