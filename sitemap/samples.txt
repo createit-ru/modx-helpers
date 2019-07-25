@@ -8,6 +8,12 @@ map
   &showHidden=`1`
   &where=`{"searchable": 1}`
 ]]
+{'pdoMenu' | snippet :[
+  'parents' => 0,
+  'level' => 10,
+  'showHidden' => 1,
+  'where' => ["searchable" => 1]
+]}
 
 2. 404
 Страница не найдена (Ошибка 404)
@@ -22,3 +28,9 @@ map
   &showHidden=`1`
   &where=`{"searchable": 1}`
 ]]
+{'pdoMenu' | snippet :[
+  'parents' => 0,
+  'level' => 10,
+  'showHidden' => 1,
+  'where' => ["searchable" => 1]
+]}
